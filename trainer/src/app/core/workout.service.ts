@@ -27,6 +27,29 @@ export class WorkoutService {
       return this.http.get<Exercise[]>(this.collectionsUrl + '/exercises' + this.params)
       .pipe(catchError(this.handleError('getExercises', [])));
     }
+  
+  //rki
+   getExercisesusingPromise(): Promise<Exercise[]> {
+      return this.http.get<Exercise[]>(this.collectionsUrl + '/exercises' + this.params)
+     .promise()
+     .then(res => res)
+     .catch(err => {
+      return Promise.reject(this.handleError('getExercises', []) );
+    }
+            /*
+            //in compoent code to subscribe 
+            ngOnInit() {
+            this.workoutService.getExerciseusingPromise()
+              .then ( exerciseList => this.exerciseList = exerciseList,
+            .error => thiserrorMessage = <any>error
+            );            
+            }
+            
+            
+            
+            
+            */
+  
 
     getExercise (exerciseName: string): Observable<Exercise> {
         return this.http.get<Exercise>(this.collectionsUrl + '/exercises/' + exerciseName  + this.params)
