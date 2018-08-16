@@ -37,6 +37,16 @@ export class WorkoutService {
       return Promise.reject(this.handleError('getExercises', []) );
     }
             /*
+            getExercises22(): Promise<Exercise[]> {
+        return this.http.get<Exercise[]>(this.collectionsUrl + '/exercises' + this.params)
+            .toPromise()
+            .then(res => res)
+            .catch(err => {
+            return Promise.reject(this.handleError('getExercises', []));
+            });
+       }
+            
+            
             //in compoent code to subscribe 
             ngOnInit() {
             this.workoutService.getExerciseusingPromise()
