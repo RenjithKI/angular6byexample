@@ -63,3 +63,20 @@ He tries to support the platform in every possible way by writing blogs on vario
 
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
+
+#References
+https://angular.io/guide/http
+https://stackoverflow.com/questions/35763730/difference-between-constructor-and-ngoninit
+https://angular.io/tutorial/toh-pt4
+https://stackoverflow.com/questions/36664824/typescript-getter-and-setter-error
+
+
+
+
+
+
+
+
+
+
+
